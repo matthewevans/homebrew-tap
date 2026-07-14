@@ -12,7 +12,7 @@ class GitReconcile < Formula
     libexec.install "bin/git-reconcile"
     (bin/"git-reconcile").write_env_script(
       libexec/"git-reconcile",
-      PATH: "#{Formula["bash"].opt_bin}:$PATH",
+      PATH: "#{formula_opt_bin("bash")}:$PATH",
     )
   end
 
