@@ -18,5 +18,7 @@ class GitReconcile < Formula
 
   test do
     assert_match "git-reconcile #{version}", shell_output("#{bin}/git-reconcile --version")
+    output = shell_output("#{bin}/git-reconcile not-a-ref 2>&1", 2)
+    assert_match "'not-a-ref' is not a valid commit or ref.", output
   end
 end
