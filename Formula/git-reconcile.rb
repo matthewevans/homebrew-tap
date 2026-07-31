@@ -1,8 +1,8 @@
 class GitReconcile < Formula
   desc "Reconcile local Git branches with their upstream"
   homepage "https://github.com/matthewevans/git-reconcile"
-  url "https://github.com/matthewevans/git-reconcile/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "96b683b0edff9674ac7ed883308db8c5e99825721e866f16a18db239f553bf86"
+  url "https://github.com/matthewevans/git-reconcile/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "bd3b3226509a6798d0af2f5f74e57509b1176d20c08481b3cc6031287126d9ed"
   license "MIT"
 
   depends_on "bash"
